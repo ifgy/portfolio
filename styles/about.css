@@ -5,3 +5,86 @@ footer a:nth-of-type(2){
     text-decoration: underline;
     color: rgb(116, 179, 173);
 }
+
+/* REWRITE OVER normal.css & big-border.css */
+section:not(.circles){
+    min-height: inherit;
+}
+.rectangle-border{
+    width: auto;
+    height: auto;
+}
+
+section{
+    padding: 20px;
+    position: relative;
+    min-width: 286px;
+}
+span:not(.star,.no-star){
+    display: flex;
+    margin-bottom: 50px;
+    width: 100%;
+}
+ul{
+    display: inline-block;
+}
+ul.no-bullets {
+    list-style-type: none;
+    padding: 0;
+}
+p,li{
+    font-family: 'Rubik Medium';
+}
+h3{
+    font-weight: lighter;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+}
+p{
+    line-height: 1.5;
+}
+li{
+    line-height: 1.8;
+}
+.dl{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.dl a:after{
+    content: url('../medias/french.png');
+    width: 10px;
+    height: auto;
+}
+.dl a:hover{
+    text-decoration: underline;
+}
+.contains-ul{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.star,.no-star{
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgb(255, 241, 113);
+    display: inline-block;
+    margin-right: 5px;
+}
+.star{
+    background-color: rgb(255, 241, 113);
+}
+@media screen and (min-width:501px) {
+    li{
+        font-weight: bold;
+    }
+}
+@media screen and (min-width:907px) {
+    section{
+        padding: 20px;
+    }
+    .star,.no-star{
+        width: 15px;
+        height: 15px;
+    }
+}
