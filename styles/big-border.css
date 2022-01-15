@@ -8,3 +8,9 @@ section:not(.circles){
     border-width: 5px;
     border-style: solid;
 }
+
+@media screen and (min-height:800px) {
+    section:not(.circles){
+        min-height: 700px;
+    }
+}

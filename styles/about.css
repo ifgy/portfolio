@@ -52,10 +52,11 @@ li{
     text-align: center;
     margin-bottom: 50px;
 }
-.dl a:after{
-    content: url('../medias/french.png');
-    width: 10px;
-    height: auto;
+.dl img{
+    width: auto;
+    height: 20px;
+    margin-left: 8px;
+    transform: translateY(20%);
 }
 .dl a:hover{
     text-decoration: underline;

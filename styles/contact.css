@@ -3,7 +3,9 @@
 span *{
     display: inline-block;
 }
-
+body{
+    overflow: hidden;
+}
 p{
     font-size: 1.1rem;
 }
@@ -12,6 +14,21 @@ span p{
 }
 button{
     height: 25px;
+    border: solid 3px rgb(143, 236, 229);
+    background-color: #fff;
+    font-family: 'Rubik';
+    z-index: 1;
+    position: relative;
+    transition: ease 0.2s;
+}
+button::after,
+button::before{
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+button:hover{
+    box-shadow: 5px 5px 0px rgb(143, 236, 229);
 }
 h2:not(h2:first-of-type){
     display: inline-block;
@@ -23,4 +40,57 @@ footer a:last-of-type{
 svg{
     margin-left: 15px;
     transform: translateY(20%);
+}
+h2:nth-of-type(2):hover{
+    color: rgb(55, 124, 118);
+    transition: ease 0.2s;
+}
+h2:nth-of-type(1):hover{
+    color: rgb(45, 186, 190);
+    transition: ease 0.2s;
+}
+h2:nth-of-type(3):hover{
+    color: rgb(36, 17, 95);
+    transition: ease 0.2s;
+}
+.circles div{
+    border-width: 5px;
+    border-style: solid;
+    position: absolute;
+    z-index: -1;
+    animation-iteration-count: infinite;
+}
+.circles div:nth-of-type(2n){
+    width: 20vw;
+    height: 20vw;
+    animation-name: spin-right;
+    animation-duration: 3s;
+}
+.circles div:nth-of-type(2n+1){
+    width: 50vw;
+    height: 50vw;
+    animation-name: spin-left;
+    animation-duration: 4s;
+}
+.circles div:nth-of-type(3n-2){
+    width: 30vw;
+    height: 30vw;
+    animation-name: spin-right;
+    animation-duration: 6s;
+}
+@keyframes spin-right {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(90deg);
+    }
+}
+@keyframes spin-left {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(-90deg);
+    }
 }
