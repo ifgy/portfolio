@@ -5,6 +5,7 @@
 }
 body{
     margin: 0;
+    max-width: 1800px;
 }
 
 /* THE HEADERS */
@@ -78,7 +79,6 @@ header a:nth-of-type(3):hover{
 }
 main{
     width: 60%;
-    max-width: 1000px;
     margin: auto;
     margin-top: 150px;
 }
