@@ -1,0 +1,26 @@
+@import url(normal.css);
+
+span *{
+    display: inline-block;
+}
+
+p{
+    font-size: 1.1rem;
+}
+span p{
+    margin-right: 5px;
+}
+button{
+    height: 25px;
+}
+h2:not(h2:first-of-type){
+    display: inline-block;
+}
+footer a:last-of-type{
+    text-decoration: underline;
+    color: rgb(157, 204, 96);
+}
+svg{
+    margin-left: 15px;
+    transform: translateY(20%);
+}

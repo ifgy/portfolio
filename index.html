@@ -6,54 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lea Nguyen</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
-    <header class="d-flex flex-column justify-content-center align-items-center m-0 col-12" style="height: 100vh;">
-        <h1 class="fw-bold d-inline-block m-0 d-md-block col-md-9">Léa<br>NGUYEN</h1>
+    <section class="circles">
+        <div style="border-color: rgb(213, 255, 159); top: -5vh; left: -2vh;"></div>
+        <div style="border-color: rgb(143, 236, 229); top: 5vh; right: 10vw;"></div>
+        <div style="border-color: rgb(255, 241, 113); top: 70vh; left: -30px;"></div>
+        <div style="border-color: rgb(255, 150, 150); top: 90vh; right: 2vw;"></div>
+        <div style="border-color: rgb(222, 164, 255); top: 40vh; left: 50vw;"></div>
+        <div style="border-color: rgb(121, 179, 255); top: 7vh; left: -20px;"></div>
+        <div style="border-color: rgb(255, 121, 255); top: 85vh; left: 10vw;"></div>
+    </section>
+    <header>
+        <h1>Léa<br>NGUYEN</h1>
+        <p class="phone">MY_PORTFOLIO</p>
+        <nav class="desktop">
+            <a href="portfolio.html">MY_PORTFOLIO</a>
+            <a href="about.html">ABOUT_ME</a>
+            <a href="contact.html">CONTACT_ME</a>
+        </nav>
     </header>
 
-    <main class="container p-0">
-        <div class="d-flex col-12 flex-column flex-md-row justify-content-center align-items-center mx-0">
-            <div class="project border mb-5 px-0" data-aos="fade-up">
-                One of three columns
-            </div>
-            <div class="project border mb-5 px-0">
-              One of three columns
-            </div>
-            <div class="project border mb-5 px-0"">
-                One of three columns
-            </div>
-        </div>
-        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mx-0">
-            <div class="project border mb-5 px-0" data-aos="zoom-out-down">
-                One of three columns
-            </div>
-            <div class="project border mb-5 px-0">
-                One of three columns
-            </div>
-            <div class="project border mb-5 px-0">
-                One of three columns
-            </div>
-        </div>
+    <main class="phone">
+        <section>
+            <div class="rectangle-border" style="border-color: rgb(255, 241, 113);"></div>
+            <h3>Python game</h3>
+            <p>This 2D game is the final project of my senior year in highschool for the Computer and Digital Science class.</p>
+            <p>This is the result of several months learning for the first time programmation.</p>
+            <p>I developped a game similar to the old space game. As you can see, I got inspired by the universe of an anime called "Attack on titan" to create the pixel design of this project.</p>
+            <p>USED : Python-Pygame</p>
+        </section>
+        <section>
+            <div class="rectangle-border" style="border-color: rgb(143, 236, 229);"></div>
+            <h3>HORIZON</h3>
+            <p>This website was created as my first year tutored project for my Multimedia and Internet profession diploma.</p>
+            <p>I worked as the Full-stack developer in a team of 4 people in order to create an informative website. It has the caracteristics of a small game as you move by using the keyboard's directional arrows. You discover the Horizon city and multiple professions post training.</p>
+            <p>USED : PHP, SQL, JS, CSS, HTML</p>
+        </section>
+        <section class="one-project">
+            <div class="rectangle-border" style="border-color: rgb(222, 164, 255);"></div>
+            <h3>VIVIDE</h3>
+            <p>This website was created as my second year tutored project for my Multimedia and Internet profession diploma.</p>
+            <p>I worked as the Full-stack developer in a team of 4 people in order to create an online education platform. The content of the platform was entirely made by our team.</p>
+            <p>USED : PHP, SQL, REACTJS, CSS, HTML</p>
+        </section>
+        <section>
+            <div class="rectangle-border" style="border-color: rgb(255, 150, 150);"></div>
+            <h3>HEX#WORD</h3>
+            <p>This website was created as a small school project for the Web Integration class.</p>
+            <p>The aim was to combine the color in hexadecimal and the word coming out of it.</p>
+            <p>I used the color/word BEE and made a clicker game.</p>
+            <p>USED : D3JS, CSS, HTML</p>
+        </section>
     </main>
-
-    <footer class="d-flex flex-column my-5 ">
-        <p class="d-inline-block text-center">nguyen.lea@hotmail.fr</p>
-        <a href="#" class="d-inline-block text-center">LinkedIn</a>
+    <footer>
+        <h2>CONTACT_ME</h2>
+        <p>nguyen.lea@hotmail.fr</p>
+        <span>
+            <a href="https://www.linkedin.com/in/léa-nguyen-0500491bb" class="linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+                <title>LinkedIn</title>
+                <g>
+                <path d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z"></path>
+                </g>
+            </svg></a>
+            <a href="https://github.com/ifgy" class="github"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg></a>
+        </span>
     </footer>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>

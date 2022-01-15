@@ -1,0 +1,7 @@
+@import url(normal.css);
+@import url(big-border.css);
+
+footer a:nth-of-type(2){
+    text-decoration: underline;
+    color: rgb(116, 179, 173);
+}

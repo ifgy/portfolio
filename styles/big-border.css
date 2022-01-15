@@ -1,0 +1,10 @@
+section:not(.circles){
+    min-height: 95vh;
+}
+
+.rectangle-border{
+    width: 250px;
+    height: 190px;
+    border-width: 5px;
+    border-style: solid;
+}

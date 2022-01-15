@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+}
+#plateform{
+    background-color: rgb(204, 204, 204);
+    height: 15vh;
+    position: relative;
+}
+#player{
+    height: 20%;
+    width: 15px;
+    background-color: black;
+    position: absolute;
+    bottom: 5px;
+    left: 15%;
+}
+#ground{
+    height: 5px;
+    width: 100%;
+    background-color: rgb(158, 138, 108);
+    position: absolute;
+    bottom: 0;
+}
+#enemies{
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+#enemy{
+    position: absolute;
+    bottom: 0;
+}
+.rocks{
+    height: 5px;
+    width: 6px;
+    background-color: rgb(66, 66, 66);    
+}
+.herbs{
+    height: 3px;
+    width: 6px;
+    background-color: rgb(29, 150, 35);
+}

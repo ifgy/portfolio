@@ -1,0 +1,130 @@
+@import url(normal.css);
+@import url(big-border.css);
+
+header{
+    width: 240px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+h1{
+    font-size: 3rem;
+    /* REWRITE OVER normal.css */
+    height: auto;
+}
+header p{
+    align-self: flex-end;
+}
+
+main,footer{
+    width: 250px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* REWRITE OVER normal.css */
+    height: auto;
+    writing-mode: horizontal-tb;
+    border: 0;
+    position: inherit;
+    right: inherit;
+    max-width: inherit;
+}
+
+footer{
+    margin-bottom: 50px;
+    background-color: inherit;
+}
+
+nav{
+    width: 80%;
+    height: 80%;
+    justify-content: space-between;
+}
+
+/* LOGO */
+.linkedin:hover{
+    fill: #0A66C2;
+    display: inline;
+    margin-right: 5px;
+}
+.github:hover{
+    fill: #808080;
+    display: inline;
+    margin-left: 5px;
+}
+.circles div{
+    border-width: 5px;
+    border-style: solid;
+    position: absolute;
+    z-index: -1;
+    animation-name: floating;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+.circles div:nth-of-type(2n){
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    animation-duration: 3s;
+}
+.circles div:nth-of-type(2n+1){
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+    animation-duration: 4s;
+}
+.circles div:nth-of-type(3n-2){
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    animation-duration: 5s;
+}
+
+
+@media screen and (max-width:500px){
+    .desktop{
+        display: none;
+    }
+}
+@media screen and (min-width:501px){
+    .phone{
+        display: none;
+    }
+    header{
+        width: 70%;
+    }
+    
+    nav{ 
+        /* REWRITE OVER normal.css */
+        height: auto;
+        width: 150px;
+        align-self: flex-end;
+        line-height: 1.4;
+    }
+    .circles div:nth-of-type(2n){
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+    }
+    .circles div:nth-of-type(2n+1){
+        width: 30vw;
+        height: 30vw;
+        border-radius: 50%;
+    }
+    .circles div:nth-of-type(3n-2){
+        width: 20vw;
+        height: 20vw;
+        border-radius: 50%;
+    }
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }   
+}
