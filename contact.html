@@ -24,7 +24,7 @@
         
         <main>
             <h2>CONTACT_ME</h2>
-            <span><p>nguyen.lea@hotmail.fr</p><button>Copy_me</button></span>
+            <span><p id="email">nguyen.lea@hotmail.fr</p><button>Copy_me</button></span>
             <br><h2>linked in</h2>
             <a href="https://www.linkedin.com/in/léa-nguyen-0500491bb" class="linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
                 <title>LinkedIn</title>
@@ -43,5 +43,21 @@
             </nav>
         </footer>
     </div>
+    <script>
+        // code below from https://dev.to/walternascimentobarroso/creating-copy-button-with-js-4763 modified by me
+        document.querySelector('button').addEventListener('click', clipboardCopy);
+        async function clipboardCopy() {
+            let text = document.querySelector("#email").innerHTML;
+            await navigator.clipboard.writeText(text);
+            //end of code from https://dev.to/walternascimentobarroso/creating-copy-button-with-js-4763 modified by me
+            document.querySelector('button').style.boxShadow="5px 5px 0px #000";
+            document.querySelector('button').style.borderColor="#000";
+        }
+        document.querySelector('button').addEventListener('mouseleave', () => {
+            document.querySelector('button').style.boxShadow="";
+            document.querySelector('button').style.borderColor="rgb(143, 236, 229)";
+        });
+        
+    </script>
 </body>
 </html>
