@@ -3,6 +3,7 @@
 
 header{
     width: 240px;
+    max-width: 1300px;
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -57,6 +58,8 @@ nav{
     display: inline;
     margin-left: 5px;
 }
+
+/* BACKGROUND */
 .circles div{
     border-width: 5px;
     border-style: solid;
@@ -85,7 +88,7 @@ nav{
     animation-duration: 5s;
 }
 
-
+/* MEDIA QUERIES*/
 @media screen and (max-width:500px){
     .desktop{
         display: none;
@@ -122,7 +125,8 @@ nav{
         border-radius: 50%;
     }
 }
- 
+
+/* KEYFRAME */
 @keyframes floating {
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(0, 10px); }

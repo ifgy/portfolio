@@ -3,14 +3,24 @@ section:not(.circles){
 }
 
 .rectangle-border{
-    width: 250px;
-    height: 190px;
+    width: 100%;
+    height: 13%;
     border-width: 5px;
     border-style: solid;
 }
-
+video,img{
+    height: auto;
+    width: 100%;
+}
 @media screen and (min-height:800px) {
     section:not(.circles){
         min-height: 700px;
+    }
+}
+
+@media screen and (min-width:618px) {
+    .rectangle-border{
+        width: 330px;
+        height: 190px;
     }
 }

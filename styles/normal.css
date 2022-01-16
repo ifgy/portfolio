@@ -5,7 +5,7 @@
 }
 body{
     margin: 0;
-    max-width: 1800px;
+    min-width: 501px;
 }
 
 /* THE HEADERS */
@@ -81,6 +81,7 @@ main{
     width: 60%;
     margin: auto;
     margin-top: 150px;
+    max-width: 1000px;
 }
 
 /* CHARACTERS */
