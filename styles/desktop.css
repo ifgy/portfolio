@@ -1,0 +1,12 @@
+.header-center{
+    min-width: 484px;
+}
+.header-left{
+    min-width: 92px;
+}
+footer{
+    min-width: 67px;
+}
+main{
+    min-width: 501px;
+}
