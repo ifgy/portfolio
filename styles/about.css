@@ -1,10 +1,6 @@
 @import url(normal.css);
 @import url(big-border.css);
 
-footer a:nth-of-type(2){
-    text-decoration: underline;
-    color: rgb(116, 179, 173);
-}
 
 /* REWRITE OVER normal.css & big-border.css */
 section:not(.circles){
@@ -15,6 +11,7 @@ section:not(.circles){
     height: auto;
 }
 
+/* SMALL CONTAINERS */
 section{
     padding: 20px;
     position: relative;
@@ -25,6 +22,12 @@ span:not(.star,.no-star){
     margin-bottom: 50px;
     width: 100%;
 }
+
+/* SKILLS */
+.contains-ul{
+    display: inline-flex;
+    justify-content: space-between;
+}
 ul{
     display: inline-block;
 }
@@ -32,21 +35,20 @@ ul.no-bullets {
     list-style-type: none;
     padding: 0;
 }
-p,li{
-    font-family: 'Rubik Medium';
+
+/* LEVELS */
+.star,.no-star{
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgb(255, 241, 113);
+    display: inline-block;
+    margin-right: 5px;
 }
-h3{
-    font-weight: lighter;
-    width: 100%;
-    text-align: center;
-    margin-top: 0;
+.star{
+    background-color: rgb(255, 241, 113);
 }
-p{
-    line-height: 1.5;
-}
-li{
-    line-height: 1.8;
-}
+
+/* CV PDF */
 .dl{
     width: 100%;
     text-align: center;
@@ -61,20 +63,31 @@ li{
 .dl a:hover{
     text-decoration: underline;
 }
-.contains-ul{
-    display: inline-flex;
-    justify-content: space-between;
+
+/* CHARACTERS */
+h3{
+    font-weight: lighter;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
 }
-.star,.no-star{
-    width: 15px;
-    height: 15px;
-    border: 2px solid rgb(255, 241, 113);
-    display: inline-block;
-    margin-right: 5px;
+p,li{
+    font-family: 'Rubik Medium';
 }
-.star{
-    background-color: rgb(255, 241, 113);
+li{
+    line-height: 1.8;
 }
+p{
+    line-height: 1.5;
+}
+
+/* FOOTER UNDERLINE*/
+footer a:nth-of-type(2){
+    text-decoration: underline;
+    color: rgb(116, 179, 173);
+}
+
+/* MEDIA QUERIES */
 @media screen and (min-width:501px) {
     li{
         font-weight: bold;

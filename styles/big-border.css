@@ -1,17 +1,24 @@
-section:not(.circles){
+/* SMALL CONTAINERS */
+section:not(.circles,.about){
     min-height: 95vh;
 }
-
 .rectangle-border{
     width: 240px;
     height: 139px;
     border-width: 5px;
     border-style: solid;
 }
+.about{
+    text-align: center;
+}
+
+/* MEDIA */
 video,img{
     height: auto;
     width: 100%;
 }
+
+/* MEDIA QUERIES */
 @media screen and (min-height:800px) {
     section:not(.circles){
         min-height: 700px;

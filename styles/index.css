@@ -1,6 +1,8 @@
 @import url(normal.css);
 @import url(big-border.css);
+@import url(background-animated.css);
 
+/* HEADER */
 header{
     width: 240px;
     max-width: 1300px;
@@ -11,15 +13,11 @@ header{
     flex-direction: column;
     margin: auto;
 }
-h1{
-    font-size: 3rem;
-    /* REWRITE OVER normal.css */
-    height: auto;
-}
 header p{
     align-self: flex-end;
 }
 
+/* MAIN & FOOTER */
 main,footer{
     width: 250px;
     margin: auto;
@@ -36,11 +34,11 @@ main,footer{
     max-width: inherit;
 }
 
+/* FOOTER ON DESKTOP */
 footer{
     margin-bottom: 50px;
     background-color: inherit;
 }
-
 nav{
     width: 80%;
     height: 80%;
@@ -59,70 +57,84 @@ nav{
     margin-left: 5px;
 }
 
-/* BACKGROUND */
-.circles div{
-    border-width: 5px;
-    border-style: solid;
-    position: absolute;
-    z-index: -1;
-    animation-name: floating;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
+
+/* -- FOR ABOUT ON MOBILE -- */
+/* CV PDF */
+.dl{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
 }
-.circles div:nth-of-type(2n){
-    width: 20vw;
-    height: 20vw;
-    border-radius: 50%;
-    animation-duration: 3s;
+.dl img{
+    width: auto;
+    height: 20px;
+    margin-left: 8px;
+    transform: translateY(20%);
 }
-.circles div:nth-of-type(2n+1){
-    width: 50vw;
-    height: 50vw;
-    border-radius: 50%;
-    animation-duration: 4s;
+.dl a:hover{
+    text-decoration: underline;
 }
-.circles div:nth-of-type(3n-2){
-    width: 30vw;
-    height: 30vw;
-    border-radius: 50%;
-    animation-duration: 5s;
+
+/* SKILLS */
+ul{
+    display: inline-block;
+    font-family: 'Rubik';
+    list-style-type: none;
+    padding: 0;
+}
+.contains-ul{
+    display: inline-block;
+    justify-content: space-between;
+}
+.star,.no-star{
+    width: 9px;
+    height: 9px;
+    border: 2px solid rgb(255, 241, 113);
+    display: inline-block;
+    margin-right: 5px;
+}
+.star{
+    background-color: rgb(255, 241, 113);
+}
+
+
+/* CHARACTERS */
+p{
+    line-height: 1.5;
+}
+li{
+    line-height: 1.8;
+}
+h1{
+    font-size: 3rem;
+    /* REWRITE OVER normal.css */
+    height: auto;
+}
+
+
+/* DESKTOP & MOBILE */
+.desktop{
+    display: none;
 }
 
 /* MEDIA QUERIES*/
-@media screen and (max-width:500px){
-    .desktop{
-        display: none;
-    }
-}
 @media screen and (min-width:501px){
+    /* DESKTOP & MOBILE */
     .phone{
         display: none;
+    }
+    .desktop{
+        display: initial;
     }
     header{
         width: 70%;
     }
-    
     nav{ 
         /* REWRITE OVER normal.css */
         height: auto;
         width: 150px;
         align-self: flex-end;
         line-height: 1.4;
-    }
-    .circles div:nth-of-type(2n){
-        width: 10vw;
-        height: 10vw;
-        border-radius: 50%;
-    }
-    .circles div:nth-of-type(2n+1){
-        width: 30vw;
-        height: 30vw;
-        border-radius: 50%;
-    }
-    .circles div:nth-of-type(3n-2){
-        width: 20vw;
-        height: 20vw;
-        border-radius: 50%;
     }
 }
 
