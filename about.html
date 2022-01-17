@@ -10,6 +10,12 @@
 </head>
 
 <body>
+    <div class="language">
+        <span>
+            <button class="language-eng" onclick="eng_button()">ENG</button>
+            <button class="language-fr" onclick="fr_button()">FR</button>
+        </span>
+    </div>
     <div class="container">
         <header class="header-center">
             <h2>ABOUT_ME</h2>
@@ -20,15 +26,10 @@
 
         <main>
             <section>
-                <p>
-                    Hi ! I am Léa Nguyen.<br>I am stimulated by resolving problems and developping projects.<br>This
-                    explains why I enjoy learning constantly and about anything, which makes me a versatile person.<br>
-                    About my hobbies, I enjoy music, art, programming, sewing, embroidery, reading, learning and
-                    improving my speaking languages, trying new physical activities, .... and so on.
-                </p>
+                <p id="about_p"></p>
             </section>
             <span>
-                <section class="rectangle-border" style="border-color: rgb(255, 241, 113); width: 60%;
+                <section class="rectangle-border" style="border-color: #fff171; width: 60%;
                 max-width: 400px;">
                     <h3>HARD SKILLS</h3>
                     <span class="contains-ul">
@@ -57,30 +58,43 @@
                     </span>
                 </section>
             </span><span style="justify-content: flex-end;">
-                <section class="rectangle-border" style="border-color: rgb(222, 164, 255); width: 45%;
+                <section class="rectangle-border" style="border-color: #dea4ff; width: 45%;
                 max-width: 400px;">
                     <h3>SOFT SKILLS</h3>
-                    <ul>
-                        <li>Self-learner</li>
-                        <li>Collaboration</li>
-                        <li>Problem solving</li>
-                        <li>Adaptability</li>
-                        <li>Stress management</li>
-                        <li>Organized</li>
-                    </ul>
+                    <ul id="skills"></ul>
                 </section>
             </span>
-            <section class="dl">
-            <a href="medias/cv.pdf" target="_blank">LOOK AT MY CV<img src="medias/french.png" alt=""></a></section>
+            <section class="dl" id="cv"></section>
         </main>
         <footer>
-            <nav class="center-flex">
-                <a href="portfolio.html">MY_PORTFOLIO</a>
-                <a href="about.html">ABOUT_ME</a>
-                <a href="contact.html">CONTACT_ME</a>
+            <nav class="center-flex" id="footer_nav">
             </nav>
         </footer>
     </div>
+    
+    <script src="language.js"></script>
+    <script>
+        change_text=(n)=>{
+            document.querySelector('#cv').innerHTML=text.cv[n];
+            document.querySelector('#about_p').innerHTML=text.about_p[n];
+            document.querySelector('#footer_nav').innerHTML=text.footer_nav[n];
+            document.querySelector('#skills').innerHTML=text.skills[n];
+        }
+        let lang;
+        if(typeof(lang)=='undefined'){
+            change_text(0);
+        }
+        fr_button=()=>{
+            sessionStorage.setItem('lang',0);
+            lang = sessionStorage.getItem('lang');
+            change_text(lang);
+        }
+        eng_button=()=>{
+            sessionStorage.setItem('lang',1);
+            lang = sessionStorage.getItem('lang');
+            change_text(lang);
+        }
+    </script>
 </body>
 
 </html>

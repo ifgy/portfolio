@@ -31,3 +31,8 @@ video,img{
         height: 190px;
     }
 }
+
+/* LANGUAGE */
+.eng{
+    display: none;
+}

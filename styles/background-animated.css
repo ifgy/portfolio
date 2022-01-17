@@ -95,3 +95,7 @@
         transform: rotateZ(-90deg);
     }
 }
+/* LANGUAGE */
+.eng{
+    display: none;
+}

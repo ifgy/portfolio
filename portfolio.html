@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="styles/portfolio.css">
 </head>
 <body>
+    <div class="language">
+        <span>
+            <button class="language-eng" onclick="eng_button()">ENG</button>
+            <button class="language-fr" onclick="fr_button()">FR</button>
+        </span>
+    </div>
     <div class="container">
         <header class="header-center">
             <h2>MY_PORTFOLIO</h2>
@@ -18,85 +24,94 @@
         
         <main>
             <section>
-                <div class="rectangle-border" style="border-color: rgb(255, 241, 113);">
+                <div class="rectangle-border" style="border-color: #fff171;">
                     <video autoplay muted loop>
                         <source src="medias/otw.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                      </video>
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
                 <h3>Python game</h3>
-                <p>This 2D game is the final project of my senior year in highschool for the Computer and Digital Science class.</p>
-                <p>This is the result of several months learning for the first time programmation.</p>
-                <p>I developped a game similar to the vintage space game. As you can see, I got inspired by the universe of an anime called "Attack on titan" to create the pixel design of this project.</p>
-                <p style="color: rgb(206, 194, 23);">USED : Python</p>
+                <div id="python"></div>
             </section>
             <section>
-                <div class="rectangle-border" style="border-color: rgb(143, 236, 229);">
+                <div class="rectangle-border" style="border-color: #8fece5;">
                     <video autoplay muted loop>
                         <source src="medias/horizon.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                      </video>
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
                 <h3>HORIZON</h3>
-                <p>This website was created as my first year tutored project for my Multimedia and Internet profession diploma.</p>
-                <p>I worked as the Full-stack developer in a team of 4 people in order to create an informative website. It has the caracteristics of a small game as you move by using the keyboard's directional arrows. You discover the Horizon city and multiple professions post training.</p>
-                <p style="color: rgb(62, 165, 156);">USED : PHP, SQL, JQUERY, CSS, HTML</p>
+                <div id="horizon"></div>
             </section>
             <section>
-                <div class="rectangle-border" style="border-color: rgb(213, 255, 159);">
-                    <img src="medias/blog.gif" alt="">
+                <div class="rectangle-border" style="border-color: #d5ff9f;">
+                    <video autoplay muted loop>
+                        <source src="medias/blog.webm" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
                 <h3>BLOG</h3>
-                <p>This website was created as a school project for the Web Development class.</p>
-                <p>In pairs, we developped a small blog-like website with a back-end interface for an admin.
-                <br>Some functionalities included are : sign in/log in/log out, access the blog without an account, write a comment if connected, access the back interface if you are the admin, remove comments, users and article, write an article.</p>
-                <p style="color: rgb(152, 201, 89);">USED : PHP, SQL, JS, CSS, HTML</p>
+                <div id="blog"></div>
             </section>
             <section>
-                <div class="rectangle-border" style="border-color: rgb(255, 150, 150);">
+                <div class="rectangle-border" style="border-color: #ff9696;">
                     <video autoplay muted loop>
                         <source src="medias/bee.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                      </video>
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
                 <h3>HEX#WORD</h3>
-                <p>This website was created as a small school project for the Web Integration class.</p>
-                <p>The aim was to combine the color in hexadecimal and the word coming out of it.</p>
-                <p>I used the color/word BEE and made a clicker game.</p>
-                <p style="color: rgb(189, 92, 124);">USED : D3JS, CSS, HTML</p>
-                <p style="color: rgb(189, 92, 124);">LINK : <a href="https://ifgy.github.io/hexword/" target="_blank">https://ifgy.github.io/hexword/</a></p>
+                <div id="hexword"></div>
             </section>
             <section>
-                <div class="rectangle-border" style="border-color: rgb(121, 179, 255);">
+                <div class="rectangle-border" style="border-color: #79b3ff;">
                     <video autoplay muted loop>
                         <source src="medias/catpoop.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                      </video>
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
-                <h3>Shooter game</h3>
-                <p>This game was created as a project for the Object-oriented programming class.</p>
-                <p>In group of pairs, we developped this shooting game, similar to the vintage space game.</p>
-                <p style="color: rgb(76, 127, 194);">USED : D3JS, JS, CSS, HTML</p>
-                <p style="color: rgb(76, 127, 194);">LINK : <a href="https://ifgy.github.io/Shoot/" target="_blank">https://ifgy.github.io/Shoot/</a></p>
+                    <h3>Shooter game</h3>
+                <div id="shooter"></div>
             </section>
             <section class="one-project">
-                <div class="rectangle-border" style="border-color: rgb(222, 164, 255);">
+                <div class="rectangle-border" style="border-color: #dea4ff;">
                     <img src="medias/vivide.png" alt="">
                 </div>
                 <h3>VIVIDE</h3>
-                <p>This website was created as my second year tutored project for my Multimedia and Internet profession diploma.</p>
-                <p>I worked as the Full-stack developer in a team of 4 people in order to create an online education platform. The content of the platform was entirely made by our team.</p>
-                <p style="color: rgb(140, 60, 172);">USED : PHP, SQL, REACTJS, CSS, HTML</p>
-                <p style="color: rgb(140, 60, 172);">LINK : <a href="https://www.vivide.app/" target="_blank">https://www.vivide.app/</a></p>
+                <div id="vivide"></div>
             </section>
         </main>
         <footer>
-            <nav class="center-flex">
-                <a href="portfolio.html">MY_PORTFOLIO</a>
-                <a href="about.html">ABOUT_ME</a>
-                <a href="contact.html">CONTACT_ME</a>
+            <nav class="center-flex" id="footer_nav">
             </nav>
         </footer>
     </div>
+    
+    <script src="language.js"></script>
+    <script>
+        change_text=(n)=>{
+            document.querySelector('#python').innerHTML=text.python[n];
+            document.querySelector('#horizon').innerHTML=text.horizon[n];
+            document.querySelector('#blog').innerHTML=text.blog[n];
+            document.querySelector('#hexword').innerHTML=text.hexword[n];
+            document.querySelector('#shooter').innerHTML=text.shooter[n];
+            document.querySelector('#vivide').innerHTML=text.vivide[n];
+            document.querySelector('#footer_nav').innerHTML=text.footer_nav[n];
+        }
+        let lang;
+        if(typeof(lang)=='undefined'){
+            change_text(0);
+        }
+        fr_button=()=>{
+            sessionStorage.setItem('lang',0);
+            lang = sessionStorage.getItem('lang');
+            change_text(lang);
+        }
+        eng_button=()=>{
+            sessionStorage.setItem('lang',1);
+            lang = sessionStorage.getItem('lang');
+            change_text(lang);
+        }
+    </script>
 </body>
 </html>

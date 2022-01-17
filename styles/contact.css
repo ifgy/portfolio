@@ -15,7 +15,7 @@ span p{
 }
 
 /* COPY BUTTON */
-button{
+#copy{
     height: 25px;
     border: solid 3px rgb(143, 236, 229);
     background-color: #fff;
@@ -24,18 +24,18 @@ button{
     position: relative;
     transition: ease 0.2s;
 }
-button::after,
-button::before{
+#copy::after,
+#copy::before{
     position: absolute;
     content: "";
     z-index: -1;
 }
-button:hover{
+#copy:hover{
     box-shadow: 5px 5px 0px rgb(143, 236, 229);
 }
 
 /* LINKS */
-h2:not(h2:first-of-type){
+h2:not(#contact_title){
     display: inline-block;
 }
 svg{
@@ -60,4 +60,9 @@ h2:nth-of-type(3):hover{
 footer a:last-of-type{
     text-decoration: underline;
     color: rgb(157, 204, 96);
+}
+
+/* LANGUAGE */
+.eng{
+    display: none;
 }

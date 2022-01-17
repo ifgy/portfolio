@@ -129,7 +129,7 @@ h1{
     header{
         width: 70%;
     }
-    nav{ 
+    nav,#index_header{ 
         /* REWRITE OVER normal.css */
         height: auto;
         width: 150px;
@@ -143,4 +143,8 @@ h1{
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(0, 10px); }
     100%   { transform: translate(0, -0px); }   
+}
+/* LANGUAGE */
+.eng{
+    display: none;
 }
