@@ -53,22 +53,6 @@
             document.querySelector('#footer_nav').innerHTML=text.footer_nav[n];
             document.querySelector('#copy').innerHTML=text.copy[n];
         }
-        let lang=sessionStorage.getItem('lang');
-        if(lang==null){
-            change_text(0);
-        }else{
-            change_text(lang);
-        }
-        fr_button=()=>{
-            sessionStorage.setItem('lang',0);
-            lang = sessionStorage.getItem('lang');
-            change_text(lang);
-        }
-        eng_button=()=>{
-            sessionStorage.setItem('lang',1);
-            lang = sessionStorage.getItem('lang');
-            change_text(lang);
-        }
         // code below from https://dev.to/walternascimentobarroso/creating-copy-button-with-js-4763 modified by me
         document.querySelector('#copy').addEventListener('click', clipboardCopy);
         async function clipboardCopy() {
@@ -82,7 +66,7 @@
             document.querySelector('#copy').style.boxShadow="";
             document.querySelector('#copy').style.borderColor="rgb(143, 236, 229)";
         });
-        
     </script>
+    <script src="change_text.js"></script>
 </body>
 </html>

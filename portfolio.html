@@ -98,22 +98,7 @@
             document.querySelector('#vivide').innerHTML=text.vivide[n];
             document.querySelector('#footer_nav').innerHTML=text.footer_nav[n];
         }
-        let lang=sessionStorage.getItem('lang');
-        if(lang==null){
-            change_text(0);
-        }else{
-            change_text(lang);
-        }
-        fr_button=()=>{
-            sessionStorage.setItem('lang',0);
-            lang = sessionStorage.getItem('lang');
-            change_text(lang);
-        }
-        eng_button=()=>{
-            sessionStorage.setItem('lang',1);
-            lang = sessionStorage.getItem('lang');
-            change_text(lang);
-        }
     </script>
+    <script src="change_text.js"></script>
 </body>
 </html>
