@@ -4,7 +4,7 @@ const text = {
         "<p class='phone'>MY_PORTFOLIO</p><nav class='desktop'><a href='portfolio.html'>MY_PORTFOLIO</a><br><a href='about.html'>ABOUT_ME</a><br><a href='contact.html'>CONTACT_ME</a></nav>"
     ],
     "python" : [
-        "<p>Ce jeu 2D est la réalisation de mon projet final de ma dernière année de lycée, option Informatique et Sciences du numérique.</p><p>Cette réalisation est le résultat de mes premiers mois d'apprentissage de la programmation avec python.</p><p>J'ai développé un jeu similaire au vintage \"space game\". Comme vous pourrez le voir, je me suis inspiré de l'univers d'un anime, \"Attaque des titans\", pour créer le pixel design de ce projet.</p><p style='color: #cec217;''>LANGAGE : Python</p>",
+        "<p>Ce jeu 2D est la réalisation de mon projet final de ma dernière année de lycée, option Informatique et Sciences du numérique.</p><p>Cette réalisation est le résultat de mes premiers mois d'apprentissage de la programmation avec python.</p><p>J'ai développé un jeu similaire au vintage \"space game\". Comme vous pourrez le voir, je me suis inspirée de l'univers d'un anime, \"Attaque des titans\", pour créer le pixel design de ce projet.</p><p style='color: #cec217;''>LANGAGE : Python</p>",
         "<p>This 2D game is the final project of my senior year in highschool for the Computer and Digital Science class.</p><p>This is the result of several months learning for the first time programmation.</p><p>I developped a game similar to the vintage space game. As you can see, I got inspired by the universe of an anime called \"Attack on titan\" to create the pixel design of this project.</p><p style='color: #cec217;'>USED : Python</p>"
     ],
     "horizon" : [
