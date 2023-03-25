@@ -36,8 +36,8 @@ const text = {
         "Hi! I am Léa Nguyen.<br>I am stimulated by resolving problems and developping projects. This explains why I enjoy learning constantly and about anything, which makes me a versatile person.<br> About my hobbies, I enjoy music, art, programming, sewing, embroidery, reading, learning and improving my speaking languages, trying new physical activities, .... and so on."
     ],
     "skills" : [
-        "<li>Autodidacte</li><li>Collaborer</li><li>Résoudre</li><li>Adaptation</li><li>Gestion du stress</li><li>Organisée</li>",
-        "<li>Self-learner</li><li>Collaboration</li><li>Problem solving</li><li>Adaptability</li><li>Stress management</li><li>Organized</li>"
+        "<li>Autodidacte</li><li>Résoudre</li><li>Adaptation</li><li>Gestion du stress</li><li>Organisée</li>",
+        "<li>Self-learner</li><li>Problem solving</li><li>Adaptability</li><li>Stress management</li><li>Organized</li>"
     ],
     "cv" : [
         "<a href='medias/cv.pdf' target='_blank'>LIRE MON CV<img src='medias/french.png' alt=''></a>",
