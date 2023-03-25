@@ -7,6 +7,7 @@ section:not(.circles,.about){
     height: 139px;
     border-width: 5px;
     border-style: solid;
+    overflow: hidden;
 }
 .about{
     text-align: center;
