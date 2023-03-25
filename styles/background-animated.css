@@ -27,11 +27,14 @@
     animation-duration: 5s;
 }
 
-/* BACKGROUND  OF CONTACT*/
+/* BACKGROUND  OF CONTACT and PORTFOLIO*/
+main{
+    position: relative;
+}
 .square div{
     border-width: 5px;
     border-style: solid;
-    position: absolute;
+    position: fixed;
     z-index: -1;
     animation-iteration-count: infinite;
 }
@@ -53,6 +56,7 @@
     animation-name: spin-right;
     animation-duration: 6s;
 }
+
 
 /* MEDIA QUERIES */
 @media screen and (min-width:501px){
