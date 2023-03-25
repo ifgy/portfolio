@@ -1,5 +1,5 @@
 let lang = sessionStorage.getItem('lang');
-if (lang == null) {
+if (lang === null) {
     change_text(0);
 } else {
     change_text(lang);
